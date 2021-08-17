@@ -1,0 +1,25 @@
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="public/css/style.css">
+
+
+
+<%- include("partials/header") -%>
+<div class="pagecompose">
+
+<h1>Compose</h1>
+<br>
+<form action="/compose" method="POST">
+    <div class="form-group composepost">
+    <h4>Title</h4>
+    <input class="form-control" type="text" name="postTitle">
+    <br>
+    <h4>Post</h4>
+<textarea class="form-control" name="postBody"  cols="80" rows="5"></textarea>
+</div>
+<br>
+<button type="submit" name="button" class="btn btn-primary">PUBLISH</button>
+</form>
+
+</div>

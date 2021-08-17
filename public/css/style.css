@@ -1,0 +1,39 @@
+   /* header.ejs file */
+.navbar{
+    background-color:rgb(243, 211, 211) ;
+    box-shadow: 5px 7px 8px rgb(205, 204, 207);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    
+}
+/* .navbar-nav li a:hover{
+   color: #1abc9c !important;
+   text-decoration: none;
+} */
+.nav{
+    display: flex;
+    flex-direction: row;  
+}
+.nav li{
+    margin: 22px;
+    text-decoration: none;
+}
+
+
+    /* compose.ejs file */
+    .pagecompose{
+        margin-left: 50px;
+        margin-right: 100px;
+    }
+
+     /* home.ejs file */
+     .homeMain{
+         margin-left: 100px;
+         margin-right: 100px;
+     }
+     .homeMain button a{
+        color: white;
+        text-decoration: none;
+    }
