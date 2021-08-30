@@ -1,6 +1,6 @@
    /* header.ejs file */
 .navbar{
-    background-color:rgb(243, 211, 211) ;
+    background-color:rgb(243, 243, 243) ;
     box-shadow: 5px 7px 8px rgb(205, 204, 207);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -24,6 +24,35 @@
 
 
     /* contact */
+    .contact-social{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        height: 150px;
+    }
+    .contact-social a{
+        display: flex;
+        justify-content: center;
+        margin-right: 70px;
+    }
+    .contact-social .img1{
+        height: 100px;
+        width: 100px;
+    }
+    .contact-social .img2{
+        margin-top: 20px;
+        height: 60px;
+        width: 230px;
+    }
+    .contact-social .img3{
+        margin-top: 5px;
+        height: 100px;
+        width: 100px;
+    }
+    .contact-social .img4{
+        height: 130px;
+        width: 130px;
+    }
 
 
 
@@ -165,6 +194,10 @@
         transform: scale(1);
     }
 
+    .bg-gif{
+        width: 1000px;
+        
+    }
 
    
 
