@@ -34,6 +34,7 @@
         display: flex;
         justify-content: center;
         margin-right: 70px;
+        margin-bottom: 60px;
     }
     .contact-social .img1{
         height: 100px;
@@ -194,10 +195,21 @@
         transform: scale(1);
     }
 
-    .bg-gif{
-        width: 1000px;
-        
+    /* readmore.ejs */
+    .readmore{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 500px 500px;
     }
+    .readmore img{
+        height: 300px;
+        width: 500px;
+    }
+    .readmore p{
+        padding-left: 30px;
+    }
+
+    
 
    
 
