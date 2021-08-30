@@ -6,11 +6,6 @@ const port = 80;
 let posts = [];
 let myArray = Object.values(posts);
 
-const homeStartingContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloribus. Voluptates quaerat consequatur rem id, adipisci fugit doloremque dignissimos provident non at sapiente vitae fugiat omnis deserunt voluptate illo facilis!";
-const aboutContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloribus. Voluptates quaerat consequatur rem id, adipisci fugit doloremque dignissimos provident non at sapiente vitae fugiat omnis deserunt voluptate illo facilis!";
-const contactContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, doloribus. Voluptates quaerat consequatur rem id, adipisci fugit doloremque dignissimos provident non at sapiente vitae fugiat omnis deserunt voluptate illo facilis!";
-
-
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -20,16 +15,25 @@ app.use(express.static('public'))
 
 app.get("/", (req, res) => {
     res.render('home.ejs', {
-        homeStarting: homeStartingContent,
         posts: posts
     });
 })
 app.get("/about", (req, res) => {
-    res.render('about.ejs', { aboutStarting: aboutContent });
+    res.render('about.ejs');
 })
 app.get("/contact", (req, res) => {
-    res.render('contact.ejs', { contactStarting: contactContent });
+    res.render('contact.ejs');
 })
+app.get("/project", (req, res) => {
+    res.render('project.ejs');
+})
+app.get("/project/readmore1", (req, res) => {
+    res.render('readmore1.ejs');
+})
+app.get("/skill", (req, res) => {
+    res.render('skill.ejs');
+})
+
 app.get("/compose", (req, res) => {
     res.render('compose.ejs');
 })

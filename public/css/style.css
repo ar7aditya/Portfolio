@@ -8,32 +8,192 @@
     letter-spacing: 5px;
     
 }
-/* .navbar-nav li a:hover{
-   color: #1abc9c !important;
-   text-decoration: none;
-} */
-.nav{
-    display: flex;
-    flex-direction: row;  
-}
-.nav li{
-    margin: 22px;
-    text-decoration: none;
-}
-
-
-    /* compose.ejs file */
-    .pagecompose{
-        margin-left: 50px;
-        margin-right: 100px;
-    }
 
      /* home.ejs file */
-     .homeMain{
-         margin-left: 100px;
-         margin-right: 100px;
-     }
-     .homeMain button a{
+      button a{
         color: white;
         text-decoration: none;
     }
+    h1{
+        font-family: 'Russo One', sans-serif;
+    }
+
+
+
+    /* about */
+
+
+    /* contact */
+
+
+
+    /* project */
+    
+    .container-box{
+        display: grid;
+        padding: 70px 0;
+        place-items: center;
+        background: white;
+    }
+    .container-box h3{
+        text-align: left;
+        font-size: 16px;
+        margin-top: 0;
+        font-family: "Cormorant SC", sans-serif;
+        font-weight: normal;
+        letter-spacing: 0;
+        color: #FF3147;
+        text-transform: uppercase;
+    }
+    
+    .container-box h1{
+        text-align: left;
+        margin-top: 0;
+        font-family: "Cormorant SC", sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
+        text-transform: uppercase;
+        line-height: 40px;
+    }
+    
+    .container-box p{
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 22px;
+        margin: 10px 40px;
+        line-height: 20px;
+    }
+    
+
+    .inner-container{
+        position: relative;
+        width: 1000px;
+    }
+    
+    .inner-container div{
+        display: grid;
+        grid-template-columns: 350px 525px;
+    }
+    
+    /* .inner-container p{
+        margin: 10px 40px;
+        line-height: 20px;
+    } */
+    
+    .inner-container .slides-container{
+        display: grid;
+        overflow: hidden;
+        grid-gap: 25px;
+        height: 400px;
+    }
+    
+    .inner-container .slides-container .slides{
+        display: grid;
+        grid-template-columns: repeat(20, auto);
+        grid-gap: 20px;
+        transition: all 1s ease-in-out;
+    }
+    
+    .inner-container .card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .inner-container .card img{
+        width: 280px;
+        height: 398px;
+    }
+    
+    .inner-container .card-overlay {
+        display: flex;
+        position: relative;
+        top: -400px;
+        align-items: center;
+        padding: 7px 0;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        background-color: #FF3147;
+        transform: scale(0);
+        transition: .4s ease;
+    }
+    
+    .inner-container .card-overlay img{
+        height: 45px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .inner-container .card-overlay h3{
+        color: #FFFFFF;
+        font-size: larger;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .inner-container .card-overlay p{
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 12px;
+        padding: 20px 25px;
+        margin: 0;
+    }
+    
+    .inner-container .card-overlay input{
+        margin: 30px 0 70px 0;
+        text-align: left;
+        font-size: 11px;
+        width: 150px;
+        height: 40px;
+        padding-left: 20px;
+        border: none;
+        border-radius: 2px;
+        letter-spacing: 1px;
+        color: #FF3147;
+        background: white url("images/assets/arrow red.svg") 100px 15px no-repeat;
+    }
+    
+    .inner-container .card-overlay input:hover{
+        background: #FF3147 url("images/assets/arrow white.svg") 100px 14px no-repeat;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    
+    .inner-container .card:hover .card-overlay{
+        transform: scale(1);
+    }
+
+
+   
+
+    /* skill */
+
+
+
+    /* footer */
+    .footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #1abc9c;
+    }
+    
+    .footer p {
+        margin-top: 25px;
+        font-size: 12px;
+      color: #fff;
+    }
+
+
+
+
+
+
+
+    
