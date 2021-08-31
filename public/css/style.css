@@ -155,11 +155,43 @@
         transition: .7s ease;
     }
     
-    .inner-container .card-overlay img{
-        height: 45px;
-        width: 40px;
+    .inner-container .card-overlay div{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 250px;
         margin-top: 80px;
         margin-bottom: 20px;
+        gap: 20px;
+    }
+    .inner-container .card-overlay div .git-logo{
+        background: #ffffff url("images/GitHub-Mark/PNG/GitHub-Mark-64px.png") 55px 5px no-repeat;
+        background-size: 30px 30px;
+        width: 100px;
+    }
+    .inner-container .card-overlay div .git-logo:hover{
+        background: #FF3147 url("images/GitHub-Mark/PNG/GitHub-Mark-Light-64px.png") 55px 5px no-repeat;
+        background-size: 30px 30px;
+        color: #FFFFFF;
+    }
+    
+    .inner-container .card-overlay div input{
+        margin-top: 0;
+        text-align: left;
+        font-size: 11px;
+        width: 120px;
+        height: 40px;
+        padding-left: 10px;
+        border: none;
+        border-radius: 2px;
+        letter-spacing: 1px;
+        color: #FF3147;
+        background: white url("images/assets/arrow red.svg") 70px 15px no-repeat;
+    }
+    .inner-container .card-overlay div input:hover{
+        background: #FF3147 url("images/assets/arrow white.svg") 70px 15px no-repeat;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
     }
     
     .inner-container .card-overlay h3{
