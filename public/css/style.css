@@ -143,13 +143,12 @@
         display: flex;
         position: relative;
         top: -220px;
-        left: 83px;
+        left: 84px;
         align-items: center;
         padding: 7px 0;
         justify-content: center;
         flex-direction: column;
-        border-radius: 350px;
-        border-top-right-radius: 0px;
+        border-radius: 150px 0 0 0;
         background-color: #FF3147;
         transform: scale(0.4);
         transition: .7s ease;
