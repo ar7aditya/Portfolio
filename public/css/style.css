@@ -25,6 +25,24 @@
 
     /* about  -----------------------------------------------------------------------------------------*/
 
+    .about-container{
+        margin-top: 60px;
+    }
+    .about-heading{
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+    .heading-box{
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    .heading-box a{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    hr{
+        border: 1px solid #000000;
+    }
+
 
     /* contact  -----------------------------------------------------------------------------------------*/
     .contact-social{
@@ -56,6 +74,21 @@
     .contact-social .img4{
         height: 100px;
         width: 100px;
+    }
+
+    .contact-container{
+        display: grid;
+        grid-template-columns: 550px 500px;
+        margin-top: 40px;
+        margin-left: 40px;  
+        
+    }
+
+    .map{
+        /* border: 2px solid black; */
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow:2px 1px 34px -1px  rgba(36, 34, 34);
     }
 
 
@@ -261,7 +294,7 @@
     .footer {
         display: flex;
         justify-content: center;
-        position: relative;
+        position: static;
         text-align: center;
         bottom: 0;
         width: 100%;
