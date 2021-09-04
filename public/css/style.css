@@ -30,7 +30,7 @@
     .contact-social{
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 20px;
         height: 150px;
     }
     .contact-social a{
@@ -40,22 +40,22 @@
         margin-bottom: 60px;
     }
     .contact-social .img1{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
     .contact-social .img2{
-        margin-top: 20px;
-        height: 60px;
-        width: 230px;
+        margin-top: 5px;
+        height: 70px;
+        width: 90px;
     }
     .contact-social .img3{
         margin-top: 5px;
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
     .contact-social .img4{
-        height: 130px;
-        width: 130px;
+        height: 100px;
+        width: 100px;
     }
 
 
