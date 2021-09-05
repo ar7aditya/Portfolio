@@ -49,6 +49,17 @@
         margin-left: 40px;
         margin-bottom: 40px;
     }
+    .sub-heading-box{
+        display: flex;
+        gap: 400px;
+    }
+    .sub-heading-box .intro{
+        padding-right: 200px;
+    }
+    .sub-heading-box img{
+        height: 200px;
+        border-radius: 5px;
+    }
     .heading-box h5 {
         margin-left: 20px;
         justify-content: center;
