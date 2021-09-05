@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const path = require("path");
 const ejs = require("ejs");
 const _ = require('lodash');
 const port = 80;
@@ -13,7 +14,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
-mongoose.connect("mongodb://localhost:27017/blogDBpost", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/blogDBpost", {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://ar7fitness:Aroo7aditya%40@cluster0.d2w23.mongodb.net/AR7-blog', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const postSchema = {
   title: String,
