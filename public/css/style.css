@@ -11,7 +11,7 @@
 
      /* home.ejs file  --------------------------------------------------------------------------------------- */
       .button {
-          background-color: rgb(97, 97, 218);
+          background-color: rgb(157, 157, 235);
           text-decoration: none;
         color: white;
         width: 80px;
@@ -19,6 +19,9 @@
         border-radius: 7px;
         border-style: none;
         
+    }
+    .button:hover{
+        background-color: #4271d8;
     }
     .button a{
         text-decoration: none;
