@@ -47,18 +47,24 @@ app.post('/compose', (req, res) => {
 
 app.get('/posts/:userId', function (req, res) {
     let requestedTitle = _.lowerCase(req.params.userId);
+    
+    Post.find((err,posts)=>{
+        if(err){
+            console.log(err);
+        }else{
+    posts.forEach((i) => {
+        const storedTitle = _.lowerCase(i.title);
 
-    posts.forEach(function (post) {
-        const storedTitle = _.lowerCase(post.title);
-
-        if (storedTitle === requestedTitle) {
+   if (storedTitle === requestedTitle) {
             res.render('post.ejs', {
-                title: posts.title,
-                content: posts.content
-            
+                title: i.title,
+                content: i.content
+
             });
         }
     });
+}
+});
 });
 
 app.get("/about", (req, res) => {
