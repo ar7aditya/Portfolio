@@ -17,6 +17,7 @@ app.use(express.static('public'))
 // mongoose.connect("mongodb://localhost:27017/blogDBpost", {useNewUrlParser: true});
 mongoose.connect('mongodb+srv://ar7fitness:Aroo7aditya%40@cluster0.d2w23.mongodb.net/AR7-blog', {useNewUrlParser: true, useUnifiedTopology: true});
 
+
 const postSchema = {
   title: String,
   content: String
