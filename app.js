@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -15,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 // mongoose.connect("mongodb://localhost:27017/blogDBpost", {useNewUrlParser: true});
-mongoose.connect('mongodb+srv://ar7fitness:Aroo7aditya%40@cluster0.d2w23.mongodb.net/AR7-blog', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const postSchema = {
