@@ -114,7 +114,7 @@
 
     .contact-container{
         display: grid;
-        grid-template-columns: 550px 500px;
+        grid-template-columns: 440px 500px;
         margin-top: 40px;
         margin-left: 40px;  
         
