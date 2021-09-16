@@ -1,6 +1,5 @@
-.sub-heading-box{
-    display: flex;
-    gap: 0px;
+.sub-heading-box .intro{
+    padding-right: 0px;
 }
 
 .contact-container{

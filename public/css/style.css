@@ -51,10 +51,16 @@
     }
     .sub-heading-box{
         display: flex;
-        gap: 400px;
     }
     .sub-heading-box .intro{
         padding-right: 200px;
+    }
+    .sub-heading-box .profile-pic{
+        width: 700px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
     .sub-heading-box img{
         height: 200px;
