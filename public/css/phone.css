@@ -10,3 +10,30 @@
     margin-left: 40px;  
     
 }
+ /* contact  -----------------------------------------------------------------------------------------*/
+ .contact-social{
+    height: 80px;
+}
+.contact-social a{
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-social .img1{
+    height: 40px;
+    width: 40px;
+}
+.contact-social .img2{
+    margin-top: 5px;
+    height: 35px;
+    width: 45px;
+}
+.contact-social .img3{
+    margin-top: 5px;
+    height: 40px;
+    width: 40px;
+}
+.contact-social .img4{
+    height: 50px;
+    width: 50px;
+}
