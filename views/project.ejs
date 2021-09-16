@@ -7,7 +7,7 @@
     <div class="container-box">
         <div class="inner-container">
             <h3>Some of my work</h3>
-            <div>
+            <div class="headings">
                 <h1>SERVICES PROVIDE FOR YOU</h1>
                 <p>
                     If you like any of my work and have any collabrative idea then go ahead , you are welcome to contact me
@@ -72,11 +72,38 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>  
+            
+            <div class="slides-container-navigator">
+                <span class="navigator-dot first active"></span>
+                <span class="navigator-dot second"></span>
+                <span class="navigator-dot third"></span>
+            </div>
         </div>
     </div>
     
-    <!-- <img class="bg-gif" src="css/images/1.gif" alt=""> -->
+    <script>
+const buttonsWrapper = document.querySelector(".slides-container-navigator");
+const slides = document.querySelector(".slides");
+
+buttonsWrapper.addEventListener("click", e => {
+    if (e.target.nodeName === "SPAN") {
+        Array.from(buttonsWrapper.children).forEach(item =>
+            item.classList.remove("active")
+        );
+        if (e.target.classList.contains("first")) {
+            slides.style.transform = "translateX(-0%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains("second")) {
+            slides.style.transform = "translateX(-340%)";
+            e.target.classList.add("active");
+        } else if (e.target.classList.contains('third')){
+            slides.style.transform = 'translatex(-680%)';
+            e.target.classList.add('active');
+        }
+    }
+});
+    </script>
 
 
 
