@@ -2,8 +2,11 @@
     <link rel="stylesheet" href="public/css/style.css">
 
 <%- include("partials/header") -%>
-
-            <h1> <%= title %></h1> 
+           
+          <div class="post-heading"> 
+            <h4 > <%= date %>,<%= time %></h4> 
+              <h1 class="blog-title"><%= title %></h1>  
+         </div>
             <p> <%= content %> </p>
         
             

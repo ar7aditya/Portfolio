@@ -15,13 +15,15 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
-// mongoose.connect("mongodb://localhost:27017/blogDBpost", {useNewUrlParser: true});
-mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb://localhost:27017/Portfolio", {useNewUrlParser: true});
+// mongoose.connect(process.env.MONGOOSE_CONNECTION_LINK, {useNewUrlParser: true, useUnifiedTopology: true});
 
 
 const postSchema = {
   title: String,
-  content: String
+  content: String,
+  date: String,
+  time : String
 };
 const Post = mongoose.model("Post", postSchema);
 
@@ -36,10 +38,17 @@ app.get("/compose", (req, res) => {
     res.render('compose.ejs');
 })
 
+const date = new Date();
+const n = date.toDateString();
+const time = date.toLocaleTimeString();
+
 app.post('/compose', (req, res) => {
     const post = new Post({
         title: req.body.postTitle,
-        content: req.body.postBody
+        content: req.body.postBody,
+        date : n,
+        time : time
+         
     });
     
     post.save();
@@ -60,7 +69,9 @@ app.get('/posts/:userId', function (req, res) {
    if (storedTitle === requestedTitle) {
             res.render('post.ejs', {
                 title: i.title,
-                content: i.content
+                content: i.content,
+                date : i.date,
+                time : i.time
 
             });
         }
@@ -78,8 +89,11 @@ app.get("/contact", (req, res) => {
 app.get("/project", (req, res) => {
     res.render('project.ejs');
 })
-app.get("/project/readmore1", (req, res) => {
-    res.render('readmore1.ejs');
+app.get("/project/readmore/ar7fitness", (req, res) => {
+    res.render('readmore/ar7fitness.ejs');
+})
+app.get("/project/readmore/portfolio", (req, res) => {
+    res.render('readmore/portfolio.ejs');
 })
 app.get("/skill", (req, res) => {
     res.render('skill.ejs');
