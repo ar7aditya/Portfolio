@@ -28,20 +28,17 @@
         color: white;
    
   }
-    .blog-title{
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      font-size:30px;
-      text-shadow: none;
-    }
-
     .title-heading{
         margin-bottom: 50px;
         font-family: 'Ubuntu Mono', monospace;
         text-shadow:8px 8px 8px #959b9a ;
     }
-    .date_time{
-        float: right;
-    }
+    .blog-title{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:30px;
+        text-shadow: none;
+      }
+
     .content-style{
         display: flex;
         margin-top: 20px;

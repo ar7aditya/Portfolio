@@ -9,14 +9,15 @@
 
 
         <% posts.forEach(function(post) { %>
-            <h5 class="date_time"> <%= post.date %></h5> 
             <h1 class="blog-title"> <%= post.title %></h1> 
+            <h6 class="date_time"> <%= post.date %></h6> 
             <div class="content-style">
-            <h1><%= post.content.substring(0,1)%></h1>
+            <h1><%= post.content.substring(0,1).toUpperCase()%></h1>
          <p><%= post.content.substring(1,100)+"..."%> 
          <a href="/posts/<%=post.title%>" + post.title> Read more</a> 
         </p>
     </div>
+    <hr>
             <% }) %>
             <br>
             <br>

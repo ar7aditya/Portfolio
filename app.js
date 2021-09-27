@@ -42,6 +42,7 @@ const date = new Date();
 const n = date.toDateString();
 const time = date.toLocaleTimeString();
 
+
 app.post('/compose', (req, res) => {
     const post = new Post({
         title: req.body.postTitle,
@@ -50,7 +51,6 @@ app.post('/compose', (req, res) => {
         time : time
          
     });
-    
     post.save();
     res.redirect("/");
 
