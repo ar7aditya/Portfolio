@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const ejs = require("ejs");
 const _ = require('lodash');
-const port = 80;
+const port = 8080;
 let posts = [];
 let myArray = Object.values(posts);
 
